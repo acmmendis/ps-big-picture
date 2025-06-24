@@ -1,0 +1,16 @@
+name: Hello-world
+
+on: push
+
+jobs: 
+  hello-world-job:
+    name: Hello World
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: chkout repo
+       uses: actions/checkout@4.2.2
+     - run: echo "$(cat hello_world.txt)"
+       
+    
+  
